@@ -1,4 +1,5 @@
 import streamlit as st
+from utils import extract_features
 import numpy as np
 import librosa
 import joblib
