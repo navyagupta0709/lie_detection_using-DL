@@ -1,0 +1,5 @@
+{
+  "model_path": "model.pkl",
+  "sample_rate": 22050,
+  "duration": 3
+}
