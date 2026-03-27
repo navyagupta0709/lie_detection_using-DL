@@ -1,1 +1,14 @@
+import numpy as np
+from sklearn.ensemble import RandomForestClassifier
+import joblib
 
+# Fake dataset (40 features like MFCC)
+X = np.random.rand(100, 40)
+y = np.random.randint(0, 2, 100)
+
+model = RandomForestClassifier()
+model.fit(X, y)
+
+joblib.dump(model, "model.pkl")
+
+print("model.pkl created!")
